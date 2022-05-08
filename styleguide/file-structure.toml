@@ -1,0 +1,27 @@
+# `nitpick` specific configuration.
+# `nitpick` ensures that you have the same configuration
+# in your own project.
+
+# Make sure to install it with:
+# `pip install nitpick`
+
+# See: https://nitpick.readthedocs.io/en/latest/
+
+[nitpick.files.absent]
+    "Pipfile"          = "Use pyproject.toml instead"
+    "Pipfile.lock"     = "Use pyproject.toml instead"
+    "requirements.txt" = "Install poetry, run 'poetry init' to create pyproject.toml, and move dependencies to it"
+
+    ".flake8"    = "Move values to setup.cfg, section [flake8]"
+    ".isort.cfg" = "Move values to setup.cfg, section [isort]"
+    "mypy.ini"   = "Move values to setup.cfg, section [mypy]"
+
+    ".pyup.yml"   = "Configure your CI with safety instead: https://github.com/pyupio/safety#using-safety-with-a-ci-service"
+    ".travis.yml" = "Travis is shutting down, please switch to some other CI service"
+
+
+[nitpick.files.present]
+    ".editorconfig" = "A project should have an editor configuration"
+    ".gitignore"    = "A project should have `.gitignore` file"
+    "CHANGELOG.md"  = "A project should have `CHANGELOG.md`"
+    "README.md"     = "A project should have `README.md`"

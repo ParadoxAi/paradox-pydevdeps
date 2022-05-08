@@ -1,0 +1,27 @@
+# `nitpick` specific configuration.
+# `nitpick` ensures that you have the same configuration
+# in your own project.
+
+# Make sure to install it with:
+# `pip install nitpick`
+
+# See:
+# See: https://nitpick.readthedocs.io/en/latest/
+
+# This file is included into base-preset.
+
+["setup.cfg".mypy]
+    allow_redefinition     = false
+    check_untyped_defs     = true
+    ignore_errors          = false
+    ignore_missing_imports = true
+    implicit_reexport      = false
+    local_partial_types    = true
+    no_implicit_optional   = true
+    strict_equality        = true
+    strict_optional        = true
+    warn_no_return         = true
+    warn_redundant_casts   = true
+    warn_unreachable       = true
+    warn_unused_configs    = true
+    warn_unused_ignores    = true
