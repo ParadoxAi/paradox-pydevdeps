@@ -10,4 +10,18 @@
 # This file is included into base-preset.
 
 ["setup.cfg".flake8]
-    # These values should be placed inside `setup.cfg` in your repo:
+    format      = "wemake"
+    show-source = false
+
+    # Plugins:
+    max-complexity  = 6
+    max-line-length = 120
+
+    # darglint:
+    docstring-style = "numpy"
+
+    # Violations:
+    ignore = [
+        "B001,B006,",
+        "C812,C901,"
+    ]
