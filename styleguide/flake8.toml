@@ -10,4 +10,15 @@
 # This file is included into base-preset.
 
 ["setup.cfg".flake8]
-    # These values should be placed inside `setup.cfg` in your repo:
+    format      = "wemake"
+    show-source = false
+
+    # Plugins:
+    max-complexity  = 6
+    max-line-length = 120
+
+    # darglint:
+    docstring-style = "numpy"
+
+    # Violations:
+    ignore = "B001,B006,D415,D103,WPS413,WPS221,WPS237,D411,RST301,E800,RST201,C901,D104,D100,D401,WPS336,D212,D205,E121,E126,E127,E128,E131,E203,E226,E251,E261,E262,E265,E401,E402,E501,E502,E722,F401,F401,F403,F403,F405,F405,F541,F541,I001,I005,D400,RST203 I004,N801,N802,N803,N806,N812,N814,N814,Q000,SIM102,SIM105,SIM106,SIM110,SIM118,SIM210,SIM300,T001,TYP001,W292,W292,W391,W503,W503,W504,W504,WPS305,WPS400,"
