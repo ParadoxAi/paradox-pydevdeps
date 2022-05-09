@@ -10,6 +10,6 @@
             "isort.toml",
             "darglint.toml",
             "mypy.toml",
-            "poetry.toml",
-            "styleguide.toml",
+            "pyright.toml",
+            "poetry.toml"
         ]
