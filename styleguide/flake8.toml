@@ -10,4 +10,5 @@
 # This file is included into base-preset.
 
 ["setup.cfg".flake8]
+    format = "paradox"
     # These values should be placed inside `setup.cfg` in your repo:
