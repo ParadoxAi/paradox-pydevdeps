@@ -11,8 +11,8 @@
 
 ["setup.cfg".pyright]
     # These values should be placed inside `setup.cfg` in your repo:
-    exclude                = ["**/node_modules", "**/__pycache__"]
-    include                = ["paradox"]
+    exclude                = "**/node_modules,**/__pycache__"
+    include                = "paradox"
     reportMissingImports   = true
     reportMissingTypeStubs = false
 
