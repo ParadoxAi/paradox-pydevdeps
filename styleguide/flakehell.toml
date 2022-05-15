@@ -1,0 +1,32 @@
+# `flakehell` specific configuration.
+# This file is served as `base` config under `[tool.flakehell]`
+
+# Make sure to install it with:
+# `pip install flakehell`
+
+# See:
+# See: https://nitpick.readthedocs.io/en/latest/
+
+# This file is not related to `nitpick` at all.
+# This file is optional, not required for `flake8` users.
+
+[tool.flakehell]
+    doctests          = true
+    enable_extensions = "G"
+    format            = "grouped"
+    show_source       = true
+    statistics        = false
+
+    accept_encodings = "utf-8"
+    max_complexity   = 6
+    max_line_length  = 120
+
+    ignore = "D100, D104, D401, W504, RST303, RST304, DAR103, DAR203"
+
+    [tool.flakehell.plugins]
+        "flake8-*"                 = ["+*"]
+        mccabe                     = ["+*"]
+        nitpick                    = ["+*"]
+        "pep8-naming"              = ["+*"]
+        pycodestyle                = ["+*"]
+        pyflakes                   = ["+*"]

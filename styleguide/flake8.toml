@@ -1,0 +1,27 @@
+# `nitpick` specific configuration.
+# `nitpick` ensures that you have the same configuration
+# in your own project.
+
+# Make sure to install it with:
+# `pip install nitpick`
+
+# See: https://nitpick.readthedocs.io/en/latest/
+
+# This file is included into base-preset.
+
+["setup.cfg".flake8]
+    format      = "wemake"
+    show-source = false
+
+    # Plugins:
+    max-complexity  = 6
+    max-line-length = 120
+
+    # exclude sources
+    exclude = ".git,__pycache__,.venv,.eggs,*.egg,poetry_scripts"
+
+    # darglint:
+    docstring-style = "numpy"
+
+    # Violations:
+    ignore = "B001,B006,C812,C901,D100,D103,D104,D205,D212,D400,D401,D411,D415,E121,E126,E127,E128,E131,E203,E226,E251,E261,E262,E265,E401,E402,E501,E502,E722,E800,F401,F401,F403,F403,F405,F405,F541,F541,I001,I004,I005,N801,N802,N803,N806,N812,N814,N814,Q000,RST201,RST203,RST301,SIM102,SIM105,SIM106,SIM110,SIM118,SIM210,SIM300,T001,TYP001,W292,W292,W391,W503,W503,W504,W504,WPS221,WPS237,WPS305,WPS336,WPS355,WPS400,WPS413,WPS462,"
