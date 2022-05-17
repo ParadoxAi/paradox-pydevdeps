@@ -1,0 +1,33 @@
+---
+name: "Update CHANGELOG"
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  CHANGELOG-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update changelog
+        run: |
+          npm install github-release-notes -g
+          export GREN_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          gren changelog --override
+      # - name: Create Pull Request
+      #  uses: peter-evans/create-pull-request@v4
+      #  with:
+      #    commit-message: update changelog
+      #    title: Update Changelog
+      #    body: Update changelog to reflect release changes
+      #    branch: update-changelog
+      #    base: main
+      #  env:
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: "Build CHANGELOG"
+      #  id: build_changelog
+      #  uses: mikepenz/release-changelog-builder-action@v3.0.0
+      #  env:
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #  with:
+      #    configuration: ".github/changelog-config1.json"
