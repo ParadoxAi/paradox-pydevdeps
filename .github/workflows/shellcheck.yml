@@ -1,0 +1,32 @@
+---
+name: "Shell Checker"
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - 'tests/**/*.sh'
+      - '**/*.sh'
+  pull_request:
+    paths:
+      - 'tests/**/*.sh'
+      - '**/*.sh'
+  workflow_dispatch:
+
+concurrency:
+  group: shellcheck-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  Shell-Lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ludeeus/action-shellcheck@1.1.0
+        env:
+          SHELLCHECK_OPTS: -s bash
+        with:
+          severity: style
+          check_together: 'yes'
