@@ -57,7 +57,7 @@
         pytest-factoryboy    = ">=2.1.0"
         faker                = ">=13.2.0"
 
-        hypothesis = "^6.46"
+        hypothesis = "^6.47"
         nplusone   = "^1.0"
 
         doc8                     = "^0.11"
