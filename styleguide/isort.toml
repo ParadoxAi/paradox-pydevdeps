@@ -9,15 +9,13 @@
 
 # This file is included into base-preset.
 
-["setup.cfg".isort]
-    # These values should be placed inside `setup.cfg` in your repo:
+["pyproject.toml".isort]
+    # These values should be placed inside `pyproject.toml` in your repo:
     include_trailing_comma = true
     known_local_folder = "paradox*"
-    known_third_party = "MySQLdb,croniter,dateutil,dicttoxml,django,furl,html2text,jsonschema,lxml,markdown,phonenumbers,pytz,urlextract"
     known_typing_extensions = "typing_extensions"
     line_length = 120
     multi_line_output = 3
     no_lines_before = "TYPING_EXTENSIONS"
     profile = "black"
     sections = "FUTURE,STDLIB,TYPING_EXTENSIONS,THIRDPARTY,LOCALFOLDER,FIRSTPARTY"
-    use_parentheses = true

@@ -23,6 +23,7 @@
         curlify     = ">=2.2.1"
         flake8      = ">=4.0.1"
         ipython     = ">=8.0.1"
+        # https://github.com/ipython/ipython/issues/12747
         jedi        = ">=0.18.1"
         pep8-naming = ">=0.12.1"
         pre-commit  = ">=2.17.0"
@@ -73,6 +74,7 @@
         polint        = "^0.4"
         safety        = "^1.10"
         yamllint      = "^1.26"
+        isort         = "^5.10.1"
 
 [build-system]
     build-backend = "poetry.core.masonry.api"
