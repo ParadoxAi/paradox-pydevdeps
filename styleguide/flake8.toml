@@ -9,19 +9,25 @@
 
 # This file is included into base-preset.
 
-["setup.cfg".flake8]
-    format      = "wemake"
-    show-source = false
+# Follow Flask's flake8 guide https://github.com/pallets/flask/blob/main/setup.cfg#L64
+# Add Django and Pytest plugins
 
-    # Plugins:
+["setup.cfg".flake8]
+    min_python_version = "3.10.0"
     max-complexity  = 20
     max-line-length = 120
 
     # exclude sources
     exclude = ".git,__pycache__,.venv,.eggs,*.egg,build,.build,dist,.tox,poetry_scripts"
 
-    # darglint:
-    docstring-style = "numpy"
+    # B = bugbear
+    # E = pycodestyle errors
+    # F = flake8 pyflakes
+    # W = pycodestyle warnings
+    # B9 = bugbear opinions
+    # ISC = implicit str concat
+    # DJ = django
+    # PT = pytest
+    select = "B,E,F,W,B9,ISC,DJ,PT"
 
-    # Violations:
-    ignore = "B001,B006,C812,C901,D100,D103,D104,D105,D106,D107,D205,D203,D212,D400,D401,D411,D412,D415,E121,E126,E127,E128,E131,E203,E226,E251,E261,E262,E265,E401,E402,E501,E502,E722,E800,F401,F401,F403,F403,F405,F405,F541,F541,I001,I003,I004,I005,N801,N802,N803,N806,N812,N814,N814,Q000,RST201,RST203,RST301,SIM102,SIM105,SIM106,SIM110,SIM118,SIM210,SIM300,T001,TYP001,W292,W292,W391,W503,W503,W504,W504,WPS221,WPS237,WPS300,WPS305,WPS336,WPS355,WPS400,WPS413,WPS453,WPS462,WPS411,D101,WPS301,WPS360,WPS306,DAR000,WPS430,WPS229,WPS210,WPS231,WPS118,WPS428,WPS122,WPS121,WPS226,WPS464,N805,"
+    ignore = "E203,E402,E501,E722,W503,PT001,PT023"
