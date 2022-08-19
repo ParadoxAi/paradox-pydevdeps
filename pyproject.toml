@@ -63,7 +63,7 @@
         nplusone   = "^1.0"
 
         doc8                     = "^0.11"
-        sphinx                   = "^5.0.1"
+        sphinx                   = "^5.1.1"
         sphinx-autodoc-typehints = "^1.18"
         tomlkit                  = "^0.11.0"
 
