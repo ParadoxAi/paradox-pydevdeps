@@ -530,6 +530,18 @@ python-versions = "*"
 flake8 = "*"
 
 [[package]]
+name = "flake8-docstrings"
+version = "1.6.0"
+description = "Extension for flake8 which uses pydocstyle to check docstrings"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+flake8 = ">=3"
+pydocstyle = ">=2.1"
+
+[[package]]
 name = "flake8-implicit-str-concat"
 version = "0.3.0"
 description = "Flake8 plugin to encourage correct string literal concatenation."
@@ -1794,7 +1806,7 @@ pyyaml = "*"
 [metadata]
 lock-version = "1.1"
         python-versions = "^3.10.4"
-content-hash = "05ef1965499f81a4e08f1f01088912c54ce006fd73d42a57fa1e7ec3fc014d4a"
+content-hash = "e0ea4edd2583f7cc74c9b52b9fd014bc10ba59a60672ef27cdb980c9b6b2c6a3"
 
 [metadata.files]
 alabaster = [
@@ -2023,6 +2035,10 @@ flake8-bugbear = [
 flake8-django = [
     {file = "flake8-django-1.1.1.tar.gz", hash = "sha256:fb4e8f669d3cf44297bb6e1c5d0a358ab0aba373cd4c69268cf2798de6bcbd9b"},
     {file = "flake8_django-1.1.1-py3-none-any.whl", hash = "sha256:c71da0e61b6119dae91cbffdbdb00f1d6ebe3f5d0c43f5bf136929997ab0b72d"},
+]
+flake8-docstrings = [
+    {file = "flake8-docstrings-1.6.0.tar.gz", hash = "sha256:9fe7c6a306064af8e62a055c2f61e9eb1da55f84bb39caef2b84ce53708ac34b"},
+    {file = "flake8_docstrings-1.6.0-py2.py3-none-any.whl", hash = "sha256:99cac583d6c7e32dd28bbfbef120a7c0d1b6dde4adb5a9fd441c4227a6534bde"},
 ]
 flake8-implicit-str-concat = [
     {file = "flake8_implicit_str_concat-0.3.0-py2.py3-none-any.whl", hash = "sha256:a89ebc50567790fb7b83e032ed4014ae0db70e35d89e269c3323967135023600"},
