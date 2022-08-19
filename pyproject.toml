@@ -64,7 +64,7 @@
 
         doc8                     = "^0.11"
         sphinx                   = "^5.0.1"
-        sphinx-autodoc-typehints = "^1.18"
+        sphinx-autodoc-typehints = "^1.19"
         tomlkit                  = "^0.11.0"
 
         dennis        = "^0.9"
