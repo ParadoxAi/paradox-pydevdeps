@@ -28,6 +28,7 @@
     # ISC = implicit str concat
     # DJ = django
     # PT = pytest
-    select = "B,E,F,W,B9,ISC,DJ,PT"
+    # D = pydocstyle
+    select = "B,E,F,W,B9,ISC,DJ,PT,D"
 
-    ignore = "E203,E402,E501,E722,W503,PT001,PT023"
+    ignore = "E203,E402,E501,E722,W503,PT001,PT023,D100,D104,D105"

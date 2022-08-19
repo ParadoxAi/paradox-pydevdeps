@@ -8,7 +8,7 @@
             "file-structure.toml",
             "flake8.toml",
             "isort.toml",
-            "darglint.toml",
+            "pydocstyle.toml",
             # "mypy.toml",
             "poetry.toml"
         ]
