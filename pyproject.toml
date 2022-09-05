@@ -61,7 +61,7 @@
 
         faker = ">=13.12.1"
 
-        hypothesis = "^6.47.0"
+        hypothesis = "^6.54.5"
         nplusone   = "^1.0"
 
         doc8                     = "^0.11"
