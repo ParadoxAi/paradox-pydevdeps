@@ -10,6 +10,5 @@
             "isort.toml",
             "pydocstyle.toml",
             "poetry.toml",
-
             # "mypy.toml"
         ]
