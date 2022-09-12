@@ -9,6 +9,7 @@
             "flake8.toml",
             "isort.toml",
             "pydocstyle.toml",
-            # "mypy.toml",
-            "poetry.toml"
+            "poetry.toml",
+
+            # "mypy.toml"
         ]
