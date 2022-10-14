@@ -45,7 +45,7 @@
         wemake-python-styleguide   = "^0.16.1"
 
         nitpick        = "^0.32"
-        requests-cache = "0.9.5"
+        requests-cache = "0.9.6"
 
         pytest              = "^7.1"
         pytest-cov          = "^3.0"
