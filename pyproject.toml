@@ -71,7 +71,7 @@
         tomlkit                  = "^0.11.0"
 
         dennis        = "^0.9"
-        dotenv-linter = "^0.3"
+        dotenv-linter = "^0.4"
         dump-env      = "^1.3"
         polint        = "^0.4"
         safety        = "^1.10"
