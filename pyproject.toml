@@ -75,7 +75,7 @@
         dump-env      = "^1.3"
         polint        = "^0.4"
         safety        = "^1.10"
-        yamllint      = "^1.26"
+        yamllint      = "^1.28"
 
     [tool.poetry.extras]
         django = [
