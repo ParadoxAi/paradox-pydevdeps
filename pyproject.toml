@@ -81,7 +81,7 @@
     [tool.poetry.extras]
         django = [
             "django-coverage-plugin",
-            "django-debug-toolba",
+            "django-debug-toolbar",
             "django-extra-checks",
             "django-migration-linter",
             "django-querycount",
