@@ -29,6 +29,7 @@
         pyright     = ">=1.1.245"
         virtualenv  = ">=20.13.1"
 
+        django = "4.0.7"
         django-coverage-plugin  = {version = "^2.0", optional = true}
         django-debug-toolbar    = {version = "^3.3", optional = true}
         django-extra-checks     = {version = "^0.11", optional = true}
@@ -80,6 +81,7 @@
 
     [tool.poetry.extras]
         django = [
+            "django",
             "django-coverage-plugin",
             "django-debug-toolbar",
             "django-extra-checks",
