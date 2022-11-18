@@ -1,7 +1,7 @@
 [tool.poetry]
     authors = ["Paradox Engineer <engineering@paradox.ai>"]
     classifiers = [
-        "Programming Language :: Python :: 3.10.4",
+        "Programming Language :: Python :: 3.10.5",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ]
@@ -17,7 +17,7 @@
     version = "1.0.1"
 
     [tool.poetry.dependencies]
-        python = "^3.10.4"
+        python = "^3.10.5"
 
         bandit      = ">=1.7.2"
         curlify     = ">=2.2.1"
@@ -29,7 +29,7 @@
         pyright     = ">=1.1.245"
         virtualenv  = ">=20.13.1"
 
-        django = "4.0.7"
+        django                  = {version = "4.0.7", optional = true}
         django-coverage-plugin  = {version = "^2.0", optional = true}
         django-debug-toolbar    = {version = "^3.3", optional = true}
         django-extra-checks     = {version = "^0.13", optional = true}
@@ -37,9 +37,10 @@
         django-querycount       = {version = "^0.7", optional = true}
         django-test-migrations  = {version = "^1.2", optional = true}
         django-types            = {version = "^0.16.0", optional = true}
+        flake8-django           = {version = "^1.1", optional = true}
+        pytest-django           = {version = "^4.5", optional = true}
 
         flake8-bugbear             = "^22.7.1"
-        flake8-django              = {version = "^1.1", optional = true}
         flake8-docstrings          = "^1.6.0"
         flake8-implicit-str-concat = "^0.3.0"
         flake8-pytest-style        = "^1.6"
@@ -48,10 +49,9 @@
         nitpick        = "^0.32"
         requests-cache = "0.9.7"
 
-        pytest              = "^7.1"
+        pytest              = "^7.2"
         pytest-cov          = "^4.0"
         pytest-deadfixtures = "^2.2"
-        pytest-django       = {version = "^4.5", optional = true}
         pytest-factoryboy   = ">=2.1.0"
         pytest-randomly     = "^3.11"
         pytest-testmon      = "^1.3"
