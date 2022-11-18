@@ -48,7 +48,7 @@
         nitpick        = "^0.32"
         requests-cache = "0.9.7"
 
-        pytest              = "^7.1"
+        pytest              = "^7.2"
         pytest-cov          = "^4.0"
         pytest-deadfixtures = "^2.2"
         pytest-django       = {version = "^4.5", optional = true}
