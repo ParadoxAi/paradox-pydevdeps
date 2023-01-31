@@ -66,9 +66,9 @@
         hypothesis = "^6.47.0"
         nplusone   = "^1.0"
 
-        # doc8                     = "^1.1.1"
-        # sphinx                   = "^6.1.3"
-        # sphinx-autodoc-typehints = "^1.18"
+        doc8                     = "^1.1.1"
+        sphinx                   = "^6.1.3"
+        sphinx-autodoc-typehints = "^1.18"
         tomlkit                  = "^0.11.0"
 
         dennis        = "^1.1"
