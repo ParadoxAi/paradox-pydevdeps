@@ -1,7 +1,7 @@
 [tool.poetry]
     authors = ["Paradox Engineer <engineering@paradox.ai>"]
     classifiers = [
-        "Programming Language :: Python :: 3.11.7",
+        "Programming Language :: Python :: 3.10.5",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ]
@@ -14,69 +14,78 @@
     packages = [{include = "styleguide"}]
     readme = "README.md"
     repository = "https://github.com/ParadoxAi/paradox-pydevdeps"
-    version = "1.0.1"
+    version = "2024.04.15"
 
     [tool.poetry.dependencies]
-        python = "^3.11.7"
+        python     = "^3.11.7"
+        virtualenv = "20.26"
 
-        bandit      = ">=1.7.6"
+        # Code Quality
+        bandit      = ">=1.7.8"
         curlify     = ">=2.2.1"
-        flake8      = ">=6.0.1"
-        ipython     = ">=8.19.0"
+        flake8      = ">=6.1"
+        ipython     = ">=8.23"
         jedi        = ">=0.19.1"
         pep8-naming = ">=0.13.3"
-        pre-commit  = ">=3.6.0"
-        pyright     = ">=1.1.342"
-        virtualenv  = ">=20.25.0"
+        pre-commit  = ">=3.7"
+        pyright     = ">=1.1.360"
 
         django                  = {version = "4.2.8", optional = true}
-        django-coverage-plugin  = {version = "^3.1.0", optional = true}
-        django-debug-toolbar    = {version = "^4.2.0", optional = true}
-        django-extra-checks     = {version = "^0.13.3", optional = true}
-        django-migration-linter = {version = "^5.0.0", optional = true}
+        django-coverage-plugin  = {version = "^3.1", optional = true}
+        django-debug-toolbar    = {version = "^4.3", optional = true}
+        django-extra-checks     = {version = "^0.14", optional = true}
+        django-migration-linter = {version = "^5.1", optional = true}
         django-querycount       = {version = "^0.8.3", optional = true}
-        django-test-migrations  = {version = "^1.3.0", optional = true}
+        django-test-migrations  = {version = "^1.3", optional = true}
         django-types            = {version = "^0.19.1", optional = true}
-        flake8-django           = {version = "^1.4", optional = true}
-        pytest-django           = {version = "^4.7.0", optional = true}
+        flake8-django           = {version = "1.4", optional = true}
+        pytest-django           = {version = "^4.8", optional = true}
 
-        flake8-bugbear             = "^23.12.2"
+        flake8-bugbear             = "^24.4.21"
         flake8-docstrings          = "^1.7.0"
-        flake8-implicit-str-concat = "^0.4.0"
-        flake8-pytest-style        = "^1.7.2"
-        wemake-python-styleguide   = "^0.18.0"
+        flake8-implicit-str-concat = "^0.4"
+        flake8-pytest-style        = "^2.0"
 
-        nitpick        = "^0.34.0"
-        requests-cache = "1.1.1"
+        nitpick                  = "^0.35"
+        requests-cache           = "^1.2.0"
+        wemake-python-styleguide = "^0.19.2"
 
-        pytest              = "^7.4.3"
-        pytest-cov          = "^4.1.0"
+        # Unit Tests
+        allure-pytest       = "^2.13.5"
+        coverage            = "7.5.1"
+        faker               = ">=24.11.0"
+        genbadge            = "^1.1.1"
+        hypothesis          = "^6.100.1"
+        nplusone            = "^1.0"
+        pycrunch-trace      = "0.2"
+        pytest              = "^7.2"
+        pytest-cov          = "^5.0.0"
         pytest-deadfixtures = "^2.2.1"
-        pytest-factoryboy   = ">=2.6.0"
+        pytest-factoryboy   = ">=2.7.0"
+        pytest-html         = ">=4.1.1"
+        pytest-incremental  = "^0.6"
+        pytest-mock         = ">=3.14.0"
+        pytest-profiling    = "^1.7.0"
         pytest-randomly     = "^3.15.0"
-        pytest-testmon      = "^2.1.0"
-        pytest-timeout      = "^2.2.0"
+        pytest-sugar        = "^1.0"
+        pytest-testmon      = "^2.1.1"
+        pytest-timeout      = "^2.3.1"
+        pytest-xdist        = ">=3.5.0"
+        tox                 = "^4.14.2"
 
-        pytest-html  = ">=4.1.1"
-        pytest-mock  = ">=3.12.0"
-        pytest-xdist = ">=3.5.0"
-
-        faker = ">=21.0.0"
-
-        hypothesis = "^6.92.1"
-        nplusone   = "^1.0.0"
-
+        # Docs
         doc8                     = "^1.1.1"
-        sphinx                   = "^7.2.6"
-        sphinx-autodoc-typehints = "^1.25.2"
-        tomlkit                  = "^0.12.3"
+        sphinx                   = "^7.3.7"
+        sphinx-autodoc-typehints = "^2.1.0"
+        tomlkit                  = "^0.12.4"
 
-        dennis        = "^1.1.0"
-        dotenv-linter = "^0.4.0"
-        dump-env      = "^1.4.0"
+        # Linter
+        dennis        = "^1.1"
+        dotenv-linter = "^0.5.0"
+        dump-env      = "^1.5"
         polint        = "^0.4"
-        safety        = "^2.3.5"
-        yamllint      = "^1.33.0"
+        safety        = "^3.1"
+        yamllint      = "^1.35.1"
 
     [tool.poetry.extras]
         django = [
@@ -88,7 +97,6 @@
             "django-querycount",
             "django-test-migrations",
             "django-types",
-            "flake8-django",
             "pytest-django",
         ]
         fastapi = []
