@@ -14,7 +14,7 @@
     packages = [{include = "styleguide"}]
     readme = "README.md"
     repository = "https://github.com/ParadoxAi/paradox-pydevdeps"
-    version = "2024.04.15"
+    version = "2024.05.07"
 
     [tool.poetry.dependencies]
         python     = "^3.11.7"
