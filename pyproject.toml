@@ -85,6 +85,9 @@
         safety        = "^3.1"
         yamllint      = "^1.35.1"
 
+        # Debug tools
+        debugpy = "^1.8.13"
+
     [tool.poetry.extras]
         django = [
             "django",
