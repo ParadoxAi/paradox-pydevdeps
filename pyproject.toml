@@ -57,7 +57,7 @@
         genbadge            = "^1.1.1"
         hypothesis          = "^6.100.1"
         nplusone            = "^1.0"
-        pycrunch-trace      = "^0.3"
+        pycrunch-trace      = "0.2"
         pytest              = "^8.3.5"
         pytest-deadfixtures = "^2.2.1"
         pytest-factoryboy   = ">=2.7.0"
@@ -69,7 +69,7 @@
         pytest-testmon      = "^2.1.1"
         pytest-timeout      = "^2.3.1"
         pytest-xdist        = ">=3.5.0"
-        tox                 = "^4.25.0"
+        tox                 = "4.15.1"
 
         # Docs
         doc8                     = "^1.1.1"
