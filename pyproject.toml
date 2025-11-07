@@ -59,7 +59,6 @@
         nplusone            = "^1.0"
         pycrunch-trace      = "^0.2"
         pytest              = "^8.3.5"
-        pytest-deadfixtures = "^2.2.1"
         pytest-factoryboy   = ">=2.7.0"
         pytest-html         = ">=4.1.1"
         pytest-mock         = ">=3.14.0"
